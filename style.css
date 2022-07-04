@@ -109,12 +109,33 @@ main #btn-main {
     color: white;
     font-weight: 800;
     border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+main #btn-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 31px;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    z-index: -1;
+}
+
+main #btn-main:hover::before {
+    opacity: 1;
 }
 
 main #img-main {
     background-image: url(./docs/assets/image-hero-mobile@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
+    width: 100%;
     padding-top: 92%;
 }
 
@@ -139,6 +160,7 @@ main #img-main {
 
 #check-out-card h2 {
     color: white;
+    font-weight: 800;
 }
 
 #grid-cards #icons {
@@ -169,6 +191,130 @@ main #img-main {
     color: var(--hyperlink-active-color);
 }
 
+/* Tablet Design */
 @media (min-width: 576px) {
+    
+    header {
+        padding: 1.5rem 2.5rem 0rem 2.5rem;
+    }
 
+    footer {
+        padding: 2.25rem 2.5rem;
+    }
+
+    main {
+        padding: 6.2rem 0rem 11rem 2.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    main #img-main {
+        background-image: url(./docs/assets/image-hero-tablet@2x.png);
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        right: -270px;
+        top: -80px;
+        z-index: -1;
+    }
+
+    /* grid section */
+    #grid-cards {
+        padding: 0rem 2.5rem 2.2rem 2.5rem;
+        display: grid;
+        column-gap: 0.6rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        margin-bottom: 3.5rem;
+        padding: 1.8rem;
+    }
+
+    #grid-cards h3 {
+        padding: 1.8rem 0 0.3rem 0;
+        font-size: 1.2rem;
+    }
+
+    #check-out-card h2 {
+        padding: 1.8rem 0 0.3rem 0;
+    }
+
+    #animation-card {
+        margin-top: 0;
+    }
+}
+
+/* Desktop design */
+@media (min-width: 992px) {
+
+    /* header customization */
+    header {
+        padding: 1.5rem 10.25rem 0rem 10.25rem;
+    }
+
+    footer {
+        padding: 2rem 10.25rem 2rem 10.25rem;
+    }
+
+
+    #btn-header, #btn-footer {
+        font-size: 1.15rem;
+        padding: 0.85rem 2.05rem;
+    }
+
+    .logo {
+        width: 114px;
+    }
+
+    main {
+        padding: 11rem 0rem 15rem 10.25rem;
+    }
+
+    main h1 {
+        font-size: 3.5rem;
+    }
+
+    main p {
+        font-size: 1.15rem;
+        line-height: 2.7rem;
+        padding-bottom: 0.8rem;
+    }
+
+    main #btn-main {
+        font-weight: 900;
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    main #img-main {
+        background-image: url(./docs/assets/image-hero-desktop@2x.png);
+        position: absolute;
+        width: 1000px;
+        height: 1100px;
+        top: -150px;
+        right: -360px;
+    }
+
+    #grid-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2.15rem;
+        padding: 0rem 10.25rem 5rem 10.25rem;
+    }
+
+    .cards p{
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+        padding: 1.8rem 0rem;
+    }
+
+    #grid-cards h3 {
+        font-size: 1.5rem;
+    }
+
+    #check-out-card h2 {
+        font-size: 2rem;
+    }
 }
