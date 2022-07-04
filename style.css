@@ -248,7 +248,7 @@ main #img-main {
 /* Desktop design */
 @media (min-width: 992px) {
 
-    /* header customization */
+    /* header and footer customization */
     header {
         padding: 1.5rem 10.25rem 0rem 10.25rem;
     }
@@ -262,11 +262,12 @@ main #img-main {
         font-size: 1.15rem;
         padding: 0.85rem 2.05rem;
     }
-
+    /* updating the logo size */
     .logo {
         width: 114px;
     }
 
+    /* main section design */
     main {
         padding: 11rem 0rem 15rem 10.25rem;
     }
@@ -296,6 +297,7 @@ main #img-main {
         right: -360px;
     }
 
+    /* grid section */
     #grid-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
