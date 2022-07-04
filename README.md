@@ -49,5 +49,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Blondeli](https://www.frontendmentor.io/profile/blondeli)
-- LinkedIn - [Elisabeth Martin](https://www.linkedin.com/in/elisabeth-martin-873773199/)
+- Frontend Mentor - [@arabiu033](https://www.frontendmentor.io/profile/arabiu033)
+- LinkedIn - [Aminu Rabiu](https://www.linkedin.com/in/aminu-rabiu-72a507226/)
