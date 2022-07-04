@@ -43,9 +43,9 @@ Users should be able to:
 
 ### Useful resources
 
-- [Transitioning gradients](https://keithjgrant.com/posts/2017/07/transitioning-gradients/) - This helped me to figure out how I can add an overlay to a gradient and transition to it when hovering
-- [Background image in empty div](https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size) - This helped me to figure out how I can add a background image to an empty div and adjust it to the image's size
-- [Position div at bottom of parent container](https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container) - This helped me to figure out how I can position a div at the bottom of its parent container. I used this approach to position the link in the service cards at the bottom of the card
+- CSS Secrets_ Better Solutions to Everyday Web Design Problem - This helped me to figure out how I can add an overlay to a gradient and transition to it when hovering
+- CSS in Depth - This helped me to figure out how I can add a background image to an empty div and adjust it to the image's size
+- [The Odin Project](https://theodinproject.org) - This helped me to figure out how I can position a div at the bottom of its parent container. I used this approach to position the link in the service cards at the bottom of the card
 
 ## Author
 
