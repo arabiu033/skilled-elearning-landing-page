@@ -1,0 +1,174 @@
+/* colors and fonts */
+:root {
+--btn-header-bg-active-color: #666CA3;
+--title-color: #13183F;
+--text-color: #83869A;
+--hyperlink-color: #F74780;
+--hyperlink-active-color: #FFA7C3;
+--main-gradient: linear-gradient(#FF6F48, #F02AA6);
+--footer-gradient: linear-gradient(#4851FF, #F02AA6);
+--bg-gradient: linear-gradient(#FFFFFF, #F0F1FF);
+--card-shadow: 0 25px 50px rgba(6, 22, 141, 0.05);
+}
+
+/* resets to defaults */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+}
+
+/* small screen design */
+/* header and footer design */
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 89px;
+}
+
+#btn-header, #btn-footer {
+    padding: 0.625rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 28px;
+    border: 0;
+    transition: all 1000ms ease-in-out;
+}
+
+#btn-header {
+    background-color: var(--title-color);
+}
+
+#btn-header:hover {
+    background-color: var(--btn-header-bg-active-color);
+    cursor: pointer;
+}
+footer {
+    background-color: var(--title-color);
+    padding: 2.25rem 1rem;
+}
+
+#btn-footer {
+    background-image: var(--footer-gradient);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+#btn-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 28px;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    z-index: -1;
+}
+
+#btn-footer:hover::before {
+    opacity: 1;
+}
+
+/* main section design */
+main {
+    padding: 1.35rem 1rem;
+}
+
+main h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+main p {
+    color: var(--text-color);
+    padding-top: 1.45rem;
+    line-height: 2rem;
+}
+
+main #btn-main {
+    background-image: var(--main-gradient);
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    padding: 1rem 2.355rem;
+    border-radius: 31px;
+    color: white;
+    font-weight: 800;
+    border: 0;
+}
+
+main #img-main {
+    background-image: url(./docs/assets/image-hero-mobile@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 92%;
+}
+
+/* grid section design */
+#grid-cards {
+    background-image: var(--bg-gradient);
+    padding: 0rem 1rem 2.5rem 1rem;
+}
+
+.cards {
+    margin-bottom: 2.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+#grid-cards #check-out-card {
+    background-image: var(--main-gradient);
+    padding: 2rem;
+}
+
+#check-out-card h2 {
+    color: white;
+}
+
+#grid-cards #icons {
+    position: absolute;
+    top: -25px;
+}
+
+.cards h3 {
+    padding: 2.25rem 0 0.3rem 0;
+    font-weight: 800;
+}
+
+.cards p {
+    color: var(--text-color);
+    line-height: 3.5rem;
+}
+
+.cards a {
+    text-decoration: none;
+    color: var(--hyperlink-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    line-height: 2.6rem;
+}
+
+.cards a:hover {
+    color: var(--hyperlink-active-color);
+}
+
+@media (min-width: 576px) {
+
+}
