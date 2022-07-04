@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Blondeli/skilled-elearning-landing-page](https://github.com/Blondeli/skilled-elearning-landing-page)
+- Solution URL: [https://github.com/arabiu033/skilled-elearning-landing-page.git](https://github.com/arabiu033/skilled-elearning-landing-page.git)
 - Live Site URL: [https://arabiu033.github.io/skilled-elearning-landing-page/]( https://arabiu033.github.io/skilled-elearning-landing-page/)
 
 ## My process
